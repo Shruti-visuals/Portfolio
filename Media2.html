@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Icon Overlay with Hover Effect</title>
+    <style>
+        .media {
+            position: relative;
+            width: 300px;  /* Adjust according to your needs */
+            height: 300px; /* Adjust according to your needs */
+        }
+
+        #media-svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .icons {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .icon {
+            position: absolute;
+            width: 50px; /* Adjust size */
+            height: 50px; /* Adjust size */
+            cursor: pointer;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        #icon1 {
+            top: 10px;
+            left: 10px;
+        }
+
+        #icon2 {
+            top: 10px;
+            left: 60px;
+        }
+
+        #icon3 {
+            top: 10px;
+            left: 110px;
+        }
+
+        /* Hover effect */
+        .icon:hover {
+            transform: scale(1.2); /* Makes the icon slightly bigger */
+            opacity: 0.8; /* Slightly fades the icon */
+        }
+    </style>
+</head>
+<body><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Media SVG with 3 Icons</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: #FFFDD0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      position: relative;
+      width: 400px; /* Adjust based on your media.svg size */
+      height: 400px;
+    }
+
+    .container img.main-svg {
+      width: 100%;
+      height: 100%;
+	  top:-50px;
+      display: block;
+    }
+
+	.container img.main-svg2 {
+      width: 100%;
+	  top:-90px;
+	   height: 100%;
+      display: block;
+	  
+    }
+	
+    .icon {
+      position: absolute;
+      width: 53px; /* adjust as needed */
+      height: 60px;
+    }
+
+    .icon1 {
+      top: 50%;
+      left: 22.5%;
+      transform: translate(-50%, -50%);
+    }
+
+    .icon2 {
+      top: 53%;
+      left: 50%;
+	  width: 73px; /* adjust as needed */
+      height: 68px;
+      transform: translate(-50%, -50%);
+    }
+
+    .icon3 {
+      top: 50%;
+      left: 77.5%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Main SVG Background -->
+    <img src="Media_new.svg" alt="Main SVG" class="main-svg" />
+    <!-- Centered and Equidistant SVGs -->
+    <img src="LinkedIn.svg" alt="Icon 1" class="icon icon1" />
+    <img src="Gmail.svg" alt="Icon 2" class="icon icon2" />
+    <img src="Instagram.svg" alt="Icon 3" class="icon icon3" />
+  </div>
+ <div class="container">
+    <!-- Main SVG Background -->
+    <img src="Variant2.svg" alt="Main SVG" class="main-svg" />
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the main SVG image element
+    const mainSvg = document.querySelector(".main-svg");
+
+    // Create a mapping of icon class names to their respective hover SVGs
+    const iconHoverMap = {
+      "icon1": "Variant2.svg",
+      "icon2": "Variant3.svg",
+      "icon3": "Variant4.svg"
+    };
+
+    // Select all icon elements
+    const icons = document.querySelectorAll(".icon");
+
+    // Loop through each icon
+    icons.forEach(icon => {
+      // On hover (mouse enter)
+      icon.addEventListener("mouseenter", () => {
+        // Loop through classList and find the icon class (icon1, icon2, icon3)
+        const iconClass = Array.from(icon.classList).find(cls => iconHoverMap[cls]);
+        
+        // Change the main SVG's source to the one mapped for this icon
+        if (iconClass) {
+          mainSvg.src = iconHoverMap[iconClass];
+        }
+      });
+
+      // On hover out (mouse leave)
+      icon.addEventListener("mouseleave", () => {
+        // Revert to the default SVG
+        mainSvg.src = "Media_new.svg";
+      });
+    });
+  });
+</script>
+</body>
+</html>
+

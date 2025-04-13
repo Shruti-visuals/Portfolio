@@ -1,0 +1,41 @@
+.text-container {
+  text-align: center;
+}
+
+.divider {
+  height: 1px;
+  width: 1000px;
+  background-color: grey;
+  margin: 20px auto;
+}
+
+.section-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.left-logo {
+  text-align: left;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.right-logo {
+  text-align: right;
+}
+body {
+  background-color: black;
+  color: white;
+}
+
+.Location-svg {
+  text-align: left;
+}
+
+.Location-svg img {
+  filter: brightness(0) invert(1); /* makes SVG white on black bg */
+}
