@@ -215,7 +215,7 @@ margin-top: 10px; /* Adjust value as needed */
 
 
 h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     color: #333;
     margin: 0;
 }
@@ -305,7 +305,7 @@ h1 {
 .service-container {
   width: 340px; /* Fixed container width */
   height: 400px; /* Fixed container height */
- margin-top: 280px;
+ margin-top: 0px;
   border-radius: 8px; /* Optional */
   overflow: hidden; /* Keeps PNGs contained */
 }
@@ -492,7 +492,7 @@ h1 {
 
 .footer {
   position: relative;        /* It stays in the document flow */
-  margin-top: 500px;          /* Pushes footer to the bottom if flex is used */
+  margin-top: 00px;          /* Pushes footer to the bottom if flex is used */
   padding: 40px;
   background-color: black;
   color: white;
@@ -511,8 +511,6 @@ h1 {
 .heading-section {
     background-color: #0000; /* Background color */
     padding: 50px 20px; /* Top and bottom padding, left-right padding */
-    margin-top: 380px; /* Top margin */
-    margin-bottom: -420px; /* Bottom margin */
     text-align: center; /* Center the text */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -524,12 +522,13 @@ h1 {
     margin: 0 auto; /* Center it horizontally */
 }
 
+
 /* Styling for the heading */
 #heading {
     color: #333; /* Text color */
     font-family: 'Arial', sans-serif; /* Font family */
-    font-weight: 600; /* Font weight */
-    font-size: 1.8rem; /* Font size */
+    font-weight: 900; /* Font weight */
+    font-size: 4.8rem; /* Font size */
     line-height: 1.5; /* Line height */
     margin-bottom: 20px; /* Bottom margin for spacing */
 }
