@@ -5,24 +5,22 @@
     }
 
     html, body {
-      overflow-x: hidden;
-      background-color: #000;
-      color: white;
-      font-family: sans-serif;
+      width: 100%;
+      min-height: 100vh;
+      overflow-x: hidden; /* disables horizontal scrolling */
     }
 
     body {
       display: flex;
       justify-content: center;
+      background-color: #000;
     }
 
-    .container {
+    .containerA {
       width: 1440px;
       height: 5177px;
       background-color: #000;
       position: relative;
-	    border: 1px solid white;
-
     }
 
     .group1 {
@@ -184,6 +182,10 @@ margin-top: 10px; /* Adjust value as needed */
   animation: slideScroll 20s linear infinite;
 }
 
+.portfolio-scroll {
+  margin-top: 100px; /* Adjust value as per your need */
+}
+
 .image-box {
   width: 450px; /* 1350px / 3 */
   height: 400px;
@@ -191,7 +193,7 @@ margin-top: 10px; /* Adjust value as needed */
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  background-color: #fff;
+  background-color: #000000;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   margin: 0 10px;
@@ -207,6 +209,7 @@ margin-top: 10px; /* Adjust value as needed */
   color: white;       /* Solid white */
   font-weight: bold;  /* Bold font */
  text-align: center;
+ margin-bottom: 40px;
 }
 
 
@@ -235,15 +238,17 @@ h1 {
 .left-photo {
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 20px;
+  margin-left: 85px;
   height:676px;
   width:520px;
 }
 
 .right-photo {
-  margin-top: 10px;
+  margin-top: 50px;
   margin-bottom: 10px;
-  margin-right: 20px;
+  margin-right: 50px;
+  height:500px;
+  width:400px;
 }
 
 	
@@ -253,6 +258,7 @@ h1 {
   grid-template-rows: repeat(3, auto); /* Three rows */
   gap: 50px; /* Space between cards */
   padding: 200px; /* Optional padding around grid */
+  
 }
 
 .project-card {
@@ -260,6 +266,7 @@ h1 {
   height: 344px; /* Fixed height for each card */
   width: 500px; /* Full width of grid column */
   overflow: hidden;
+  
 }
 
 .project-card img {
@@ -288,8 +295,8 @@ h1 {
   height: 400px; /* Total section height */
   margin: 0 auto; /* Center the grid if needed */
   padding: 0; /* No padding to maintain exact dimensions */
+  
 }
-
 .service-item {
   width: 100%;
   height: 100%;
@@ -298,7 +305,7 @@ h1 {
 .service-container {
   width: 340px; /* Fixed container width */
   height: 400px; /* Fixed container height */
-  background: #f5f5f5; /* Placeholder color */
+ margin-top: 280px;
   border-radius: 8px; /* Optional */
   overflow: hidden; /* Keeps PNGs contained */
 }
@@ -322,47 +329,7 @@ h1 {
   100% { transform: translateX(0); }
 }
 
-.text-container-f {
-  text-align: center;
-}
 
-.divider {
-  height: 1px;
-  width: 1000px;
-  background-color: grey;
-  margin: 20px auto;
-}
-
-.section-container {
-  display: flex;
-  justify-content: space-between;
-  width: 1000px;
-  margin: 0 auto;
-}
-
-.left-logo {
-  text-align: left;
-}
-
-.center-text {
-  text-align: center;
-}
-
-.right-logo {
-  text-align: right;
-}
-body {
-  background-color: black;
-  color: white;
-}
-
-.Location-svg {
-  margin-left: 150px;
-}
-
-.Location-svg img {
-  filter: brightness(0) invert(1); /* makes SVG white on black bg */
-}
 
 .contact-btn {
   background-color: #000000;
@@ -384,7 +351,26 @@ body {
   /* Subtle glowing border */
   box-shadow: 0 0 3px 3px rgba(127, 90, 240, 0.4);
 }
-
+.contact-btn2 {
+  background-color: #000000;
+  color: white;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 999px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  margin-top: -150px;
+  margin-bottom: 160px;  
+  margin-left: 141px;
+  margin-right: 30px;
+  
+  /* Subtle glowing border */
+  box-shadow: 0 0 3px 3px rgba(127, 90, 240, 0.4);
+}
 
     .contact-btn svg {
       width: 18px;
@@ -423,11 +409,155 @@ body {
     .contact-btn:hover .icon svg path {
       transform: translateX(30px);
     }
+.text-container-f {
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 0;       /* Adjust as needed */
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.divider {
+  height: 1px;
+  width: 1000px;
+  background-color: grey;
+  margin: 20px auto;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.section-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.left-logo {
+  text-align: left;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.center-text {
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.right-logo {
+  text-align: right;
+  color: white;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.Location-svg {
+  text-align: left;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.Location-svg img {
+  filter: brightness(0) invert(1); /* makes SVG white on black bg */
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 200px;
+  right: 0;
+}
+
 .footer {
-  position: absolute;      /* Or 'fixed' if you want it always visible on scroll */
-  bottom: 200px;            /* Distance from bottom */
-  left: 40px;              /* Distance from left */
-  right: 40px;             /* Distance from right */
-  height: 80px;            /* Set your desired height */
+  position: relative;        /* It stays in the document flow */
+  margin-top: 500px;          /* Pushes footer to the bottom if flex is used */
   padding: 40px;
+  background-color: black;
+  color: white;
+  margin-bottom: 10px;  /* <<< Adjusts footer to be 50px above bottom */
+}
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the section */
+.heading-section {
+    background-color: #0000; /* Background color */
+    padding: 50px 20px; /* Top and bottom padding, left-right padding */
+    margin-top: 380px; /* Top margin */
+    margin-bottom: -420px; /* Bottom margin */
+    text-align: center; /* Center the text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Styling for the container inside the section */
+.textcontainer3 {
+    max-width: 800px; /* Max width of the container */
+    margin: 0 auto; /* Center it horizontally */
+}
+
+/* Styling for the heading */
+#heading {
+    color: #333; /* Text color */
+    font-family: 'Arial', sans-serif; /* Font family */
+    font-weight: 600; /* Font weight */
+    font-size: 1.8rem; /* Font size */
+    line-height: 1.5; /* Line height */
+    margin-bottom: 20px; /* Bottom margin for spacing */
+}
+
+/* Styling for the paragraph inside the heading */
+#heading p {
+    color: #ffffff; /* Text color for paragraphs */
+    font-size: 1.2rem; /* Font size for the paragraphs */
+    margin-bottom: 10px; /* Bottom margin for spacing */
+}
+
+/* Hover effect for the paragraph */
+#heading p:hover {
+    color: #ffffFF; /* Change color on hover */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .heading-section {
+        padding: 30px 15px; /* Adjust padding on smaller screens */
+    }
+
+    #heading {
+        font-size: 1.5rem; /* Smaller font size for heading on mobile */
+    }
+
+    #heading p {
+        font-size: 1rem; /* Smaller font size for paragraphs on mobile */
+    }
 }

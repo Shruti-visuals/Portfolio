@@ -28,11 +28,19 @@ document.querySelectorAll('img[data-hover]').forEach((img, index) => {
 
 <div id="footer-placeholder">
 </div>
+let current = 0;
+const texts = document.querySelectorAll('.slide-text');
 
-<script>
-  fetch("footer.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("footer-placeholder").innerHTML = data;
-    });
+function switchText() {
+  texts[current].classList.remove('active');
+  current = (current + 1) % texts.length;
+  texts[current].classList.add('active');
+}
+
+// Initially show the first text
+texts[current].classList.add('active');
+
+// Switch every 3 seconds
+setInterval(switchText, 3000);
+
 </script>
