@@ -1,3 +1,5 @@
+<script>
+
 document.querySelectorAll('img[data-hover]').forEach((img, index) => {
     const originalSrc = img.src;
     const hoverSrc = img.getAttribute('data-hover');
@@ -43,4 +45,50 @@ texts[current].classList.add('active');
 // Switch every 3 seconds
 setInterval(switchText, 3000);
 
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const pageMap = {
+      "Home": "index.html",
+      "Project": "index-p.html",
+      "Resume": "index-r.html"};
+
+    document.querySelectorAll('img').forEach(img => {
+      const targetPage = pageMap[img.alt];
+      if (targetPage) {
+        img.addEventListener('click', () => {
+          window.open(targetPage, '_blank'); // open in new tab
+        });
+      }
+    });
+
+document.addEventListener('DOMContentLoaded', () => {
+    // 🔁 Page mapping for SVG clicks
+    const pageMap = {
+      "Home": "index.html",
+      "Project": "index-p.html",
+      "Resume": "index-r.html"
+    };
+
+ <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log("JS is running!");
+
+    const pageMap = {
+      "Home": "index.html",
+      "Project": "index-p.html",
+      "Resume": "index-r.html"
+    };
+
+    document.querySelectorAll('img').forEach(img => {
+      const targetPage = pageMap[img.alt];
+      if (targetPage) {
+        img.addEventListener('click', () => {
+          console.log(`Clicked: ${img.alt}, opening: ${targetPage}`);
+          window.location.href = targetPage;
+        });
+      }
+    });
+  });
+
 </script>
+

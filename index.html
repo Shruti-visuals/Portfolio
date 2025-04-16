@@ -13,13 +13,13 @@
   <div class="containerA">
 
     <!-- Group 1: Navigation SVGs -->
-    <div class="group1">
-      <img src="Logo_Frame.svg" alt="PixelateLogo" /> 
-	<div class="groupx">
-      <img src="HomeButton.svg" data-hover="Home2.svg" alt="Home" />
-      <img src="ResumeButton.svg" data-hover="Resume2.svg" alt="Resume" />
-      <img src="ProjectsButton.svg" data-hover="Projects2.svg" alt="Project" />
-    </div>
+		<div class="group1">
+		  <img src="Logo_Frame.svg" alt="PixelateLogo" /> 
+		<div class="groupx">
+		  <img src="HomeButton.svg" data-hover="Home2.svg" alt="Home" />
+		  <img src="ProjectsButton.svg" data-hover="Projects2.svg" alt="Project" />
+		  <img src="ResumeButton.svg" data-hover="Resume2.svg" alt="Resume" />
+		</div>
 </div>
     <!-- Group 2: Social SVGs -->
     <div class="group2">
@@ -116,7 +116,7 @@
   </button>
     </section>
 
-    <!-- 🟣 Project Grid Section (Now placed correctly) -->
+    <!--  Project Grid Section  -->
     <section class="project-grid">
   <!-- Row 1 -->
   <div class="project-card">
@@ -205,7 +205,7 @@
     <p>Follow me</p>
   </div>
       <img src="Instagram.svg" alt="Logo 2">
-	  <img src="LinkedIn.svg" alt="Logo 2">
+	  <img src="linkedIn.svg" alt="Logo 2">
     </div>
 	</div>
 <div class="divider"></div>
@@ -215,6 +215,29 @@
 </section>
 
 
-<script src="script.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log("JS is running!");
+
+    const pageMap = {
+      "Home": "index.html",
+      "Project": "index-p.html",
+      "Resume": "index-r.html"
+    };
+
+    document.querySelectorAll('img').forEach(img => {
+      const targetPage = pageMap[img.alt];
+      if (targetPage) {
+        img.addEventListener('click', () => {
+          console.log(`Clicked: ${img.alt}, opening: ${targetPage}`);
+          window.location.href = targetPage;
+        });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
 </body>
 </html>

@@ -18,12 +18,11 @@ body {
 
 .containerA {
   width: 1440px;
-  height: 5177px;
+  height: 5674px;
   background-color: #000;
   position: relative;
   border: 1px solid white; /* This adds the white border */
 }
-
 
     .group1 {
   position: absolute;
@@ -257,7 +256,7 @@ h1 {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two columns */
-  grid-template-rows: repeat(3, auto); /* Three rows */
+  grid-template-rows: repeat(5, auto); /* Three rows */
   gap: 50px; /* Space between cards */
   padding: 200px; /* Optional padding around grid */
   
