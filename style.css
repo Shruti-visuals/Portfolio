@@ -415,7 +415,7 @@ h1 {
   text-align: center;
   color: white;
   position: relative;
-  top: 0;       /* Adjust as needed */
+  top: -10px;       /* Adjust as needed */
   bottom: 0;
   left: 0;
   right: 0;
@@ -423,7 +423,7 @@ h1 {
 
 .divider {
   height: 1px;
-  width: 1000px;
+  width: 1140px;
   background-color: grey;
   margin: 20px auto;
   position: relative;
@@ -455,24 +455,66 @@ h1 {
 }
 
 .center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px; /* Adjust vertical spacing between image and text */
+}
+
+.footer-icon {
+  width: 88px; /* Customize size as needed */
+  height: 20px;
+}
+
+.footer-text p {
+  margin: 0;
+  font-size: 16px; /* Adjust font size */
 }
 
 .right-logo {
   text-align: right;
   color: white;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   right: 0;
+  padding: 10px;
 }
+
+/* Common style for all icons */
+.social-icon {
+  width: 25px;       /* adjust size as needed */
+  height: 25px;
+  margin: 10px;      /* spacing around icons */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Individual icon control */
+.instagram {
+  position: relative;
+  top: 0px;          /* move down */
+  left: 14px;       /* move left */
+}
+
+.linkedin {
+  position: relative;
+  top: 0px;         /* move up */
+  right: -5px;       /* move right */
+}
+
+/* Optional: hover effect */
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
 
 .Location-svg {
   text-align: left;
@@ -488,13 +530,13 @@ h1 {
   position: relative;
   top: 0;
   bottom: 0;
-  left: 200px;
+  left: 110px;
   right: 0;
 }
 
 .footer {
   position: absolute;        /* Position it relative to the nearest positioned ancestor (.containerA) */
-  bottom: 20px;              /* Distance from the bottom edge – adjust this value as needed */
+  bottom: 40px;              /* Distance from the bottom edge – adjust this value as needed */
   left: 0;                   /* Align to the left edge */
   width: 100%;              /* Make sure it spans the full width */
   padding: 40px;            /* Inner spacing */
