@@ -27,17 +27,17 @@ body {
 
     .group1 {
   position: absolute;
-  top: 30px;
-  left: 100px;
+  top: 42px;
+  left: 146px;
   display: flex;
-  gap: 20px;
+  gap: 55px;
   z-index: 10;
 }
 
 .group2 {
   position: absolute;
-  top: 20px;
-  right: 40px;
+  top: 15px;
+  right: 55px;
   display: flex;
   gap: 20px;
   z-index: 10;
@@ -56,15 +56,15 @@ body {
 
 .group2 img {
   width: 175px;
-  height: 50px;
+  height: 35px;
   cursor: pointer;
   transition: transform 0.3s ease;
-margin-top: 10px; /* Adjust value as needed */
+margin-top: 20px; /* Adjust value as needed */
 }
 
 .groupx img {
   width: 140px;
-  height: 50px;
+  height: 38px;
   cursor: pointer;
   transition: transform 0.3s ease;
   margin-top: 5px; /* Adjust value as needed */
@@ -92,9 +92,9 @@ margin-top: 10px; /* Adjust value as needed */
 	  width: fit-content;
 	}
 	.blinking {
-	  margin-top: 200px;
+	  margin-top: 240px;
 	  margin-bottom: 20px;
-	  margin-left: 120px;
+	  margin-left: 145px;
 	  margin-right: 20px;
 
 	  padding: 15px;
@@ -149,7 +149,7 @@ margin-top: 10px; /* Adjust value as needed */
 
 .tools-container {
   position: absolute;
-  top: 100px; /* adjust this based on where you want them over the background */
+  top: 80px; /* adjust this based on where you want them over the background */
   left: 0;
   width: 100%;
   display: flex;
@@ -198,7 +198,7 @@ margin-top: 10px; /* Adjust value as needed */
   background-color: #000000;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  margin: 0 10px;
+  margin: 30px 10px;
 }
 
 .image-box img {
@@ -238,15 +238,15 @@ h1 {
 }
 
 .left-photo {
-  margin-top: 10px;
+  margin-top: -10px;
   margin-bottom: 10px;
   margin-left: 85px;
-  height:676px;
-  width:520px;
+  height:595px;
+  width:676px;
 }
 
 .right-photo {
-  margin-top: 50px;
+  margin-top: 0px;
   margin-bottom: 10px;
   margin-right: 50px;
   height:500px;
@@ -258,8 +258,10 @@ h1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two columns */
   grid-template-rows: repeat(3, auto); /* Three rows */
-  gap: 50px; /* Space between cards */
-  padding: 200px; /* Optional padding around grid */
+  gap: 75px; /* Space between cards */
+  padding: 160px; /* Optional padding around grid */
+  margin-top: -155px;
+  margin-bottom: -32px;
   
 }
 
@@ -295,7 +297,7 @@ h1 {
   gap: 15px; /* (1405 - (340×4)) / 3 gaps = 15px spacing */
   width: 1405px; /* Total section width */
   height: 400px; /* Total section height */
-  margin: 0 auto; /* Center the grid if needed */
+  margin: 15px auto; /* Center the grid if needed */
   padding: 0; /* No padding to maintain exact dimensions */
   
 }
@@ -344,10 +346,10 @@ h1 {
   align-items: center;
   gap: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  transition: background-color 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease;
   margin-top: -150px;
   margin-bottom: 160px;  
-  margin-left: 141px;
+  margin-left: 130px;
   margin-right: 30px;
   
   /* Subtle glowing border */
@@ -364,12 +366,11 @@ h1 {
   align-items: center;
   gap: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-  margin-top: -150px;
+  transition: background-color 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease;
+  margin-top: -25px;
   margin-bottom: 160px;  
-  margin-left: 141px;
+  margin-left: 130px;
   margin-right: 30px;
-  
   /* Subtle glowing border */
   box-shadow: 0 0 3px 3px rgba(127, 90, 240, 0.4);
 }
@@ -411,6 +412,45 @@ h1 {
     .contact-btn:hover .icon svg path {
       transform: translateX(30px);
     }
+	
+.contact-btn2 svg {
+      width: 18px;
+      height: 18px;
+      stroke-width: 2;
+      transition: all 0.3s ease;
+    }
+
+    .contact-btn2 .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 9px;
+    }
+
+    .contact-btn2 .icon svg circle {
+      fill: none;
+      stroke: white;
+      transition: fill 0.3s ease;
+    }
+
+    .contact-btn2 .icon svg path {
+      transition: transform 0.3s ease;
+    }
+
+    .contact-btn2:hover {
+      background-color: #7f5af0;
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #7f5af0, 0 0 20px #7f5af0;
+    }
+
+    .contact-btn2:hover .icon svg circle {
+      fill: #7f5af0;
+    }
+
+    .contact-btn2:hover .icon svg path {
+      transform: translateX(30px);
+    }
+
 .text-container-f {
   text-align: center;
   color: white;
@@ -425,7 +465,7 @@ h1 {
   height: 1px;
   width: 1140px;
   background-color: grey;
-  margin: 20px auto;
+  margin: 35px auto;
   position: relative;
   top: 0;
   bottom: 0;
@@ -535,13 +575,15 @@ h1 {
 }
 
 .footer {
-  position: absolute;        /* Position it relative to the nearest positioned ancestor (.containerA) */
-  bottom: 40px;              /* Distance from the bottom edge – adjust this value as needed */
+margin-top: 23px;
+  position: relative;        /* Position it relative to the nearest positioned ancestor (.containerA) */
+  bottom: -50px;              /* Distance from the bottom edge – adjust this value as needed */
   left: 0;                   /* Align to the left edge */
   width: 100%;              /* Make sure it spans the full width */
   padding: 40px;            /* Inner spacing */
   background-color: black;  /* Footer background */
   color: white;             /* Footer text color */
+
 }
 
 
@@ -553,55 +595,103 @@ h1 {
 }
 
 /* Styling for the section */
-.heading-section {
-    background-color: #0000; /* Background color */
-    padding: 50px 20px; /* Top and bottom padding, left-right padding */
-    text-align: center; /* Center the text */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+/* Add this to your existing CSS */
+.heading-section-x {
+    background-color: #00000000; /* transparent */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    /* 🔽 Adjust spacing here */
+    margin-top: 90px;
+    margin-bottom: 40px;
+    padding: 20px;
 }
 
-/* Styling for the container inside the section */
-.textcontainer3 {
-    max-width: 800px; /* Max width of the container */
-    margin: 0 auto; /* Center it horizontally */
+.text-container-x {
+    max-width: 800px;    /* 🔽 Change width if needed */
+    margin: 0 auto;      /* Center align */
+    width: 100%;
 }
 
-
-/* Styling for the heading */
-#heading {
-    color: #333; /* Text color */
-    font-family: 'Arial', sans-serif; /* Font family */
-    font-weight: 900; /* Font weight */
-    font-size: 4.8rem; /* Font size */
-    line-height: 1.5; /* Line height */
-    margin-bottom: 20px; /* Bottom margin for spacing */
+.main-heading-x {
+    color: #333333;            /* 🔽 Heading color */
+    font-family: 'Arial', sans-serif;
+    font-weight: 900;
+    font-size: 4.8rem;         /* 🔽 Heading size */
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 
-/* Styling for the paragraph inside the heading */
-#heading p {
-    color: #ffffff; /* Text color for paragraphs */
-    font-size: 1.2rem; /* Font size for the paragraphs */
-    margin-bottom: 10px; /* Bottom margin for spacing */
+.main-heading-x p {
+    color: #ffffff;            /* 🔽 Paragraph text color */
+    font-size: 1.2rem;         /* 🔽 Paragraph size */
+    margin-bottom: 10px;
 }
 
-/* Hover effect for the paragraph */
-#heading p:hover {
-    color: #ffffFF; /* Change color on hover */
-    transition: color 0.3s ease; /* Smooth transition */
+.main-heading-x p:hover {
+    color: #ffffFF;            /* 🔽 Color on hover */
+    transition: color 0.3s ease;
 }
 
-/* Mobile Responsiveness */
+/* 🔽 Mobile Responsiveness */
 @media (max-width: 768px) {
-    .heading-section {
-        padding: 30px 15px; /* Adjust padding on smaller screens */
+    .heading-section-x {
+        padding: 30px 15px;
     }
 
-    #heading {
-        font-size: 1.5rem; /* Smaller font size for heading on mobile */
+    .main-heading-x {
+        font-size: 1.8rem;     /* Smaller heading */
     }
 
-    #heading p {
-        font-size: 1rem; /* Smaller font size for paragraphs on mobile */
+    .main-heading-x p {
+        font-size: 1rem;       /* Smaller para */
     }
+}
+.position-box-1 {
+  position: absolute; /* Or use relative/fixed/sticky as needed */
+  top: 198px;
+  bottom: 20px;
+  left: 228px;
+  right: 30px;
+  background-color: transparent; 
+  color: #ffffff/* Optional: Just to visualize it */
+}
+.position-box-2 {
+  position: absolute; /* Or use relative/fixed/sticky as needed */
+  top: 198px;
+  bottom: 20px;
+  left: 540px;
+  right: 30px;
+  background-color: transparent; 
+  color: #ffffff/* Optional: Just to visualize it */
+}
+.position-box-3 {
+  position: absolute; /* Or use relative/fixed/sticky as needed */
+  top: 198px;
+  bottom: 20px;
+  left: 855px;
+  right: 30px;
+  background-color: transparent; 
+  color: #ffffff/* Optional: Just to visualize it */
+}
+.position-box-4 {
+  position: absolute; /* Or use relative/fixed/sticky as needed */
+  top: 198px;
+  bottom: 20px;
+  left: 1145px;
+  right: 30px;
+  background-color: transparent; 
+  color: #ffffff/* Optional: Just to visualize it */
+}
+.typewriter {
+	position: relative;
+	left: 145px;
+	right: 30px;
+	background-color: transparent; 
+	color: #ffffff;
+	font-size: 24px;
+	font-family: 'Courier New', Courier, monospace;
+	margin-top: 30px;   /* You can adjust this value */
+	margin-bottom: 30px; /* You can adjust this value */
 }
